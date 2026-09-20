@@ -49,16 +49,6 @@ java -cp out hanwassalk.RoutePlannerTests
 
 
 
-### Option 2: IntelliJ IDEA (Run icon)
-
-1. Open the project folder. Right-click `src/main/java` -> *Mark Directory as* -> *Sources Root*, and `src/test/java` -> *Test Sources Root*.
-2. Open `Main.java` and click the green run icon next to `main`. It will print the usage message once because no input file was given; this creates the run configuration.
-3. Open the configuration dropdown -> *Edit Configurations...* and set:
-    - **Program arguments:** `data/sample_deliveries.csv` (optionally add `--output plan.csv`)
-    - **Working directory:** the project folder (the one containing `data` and `src`)
-4. Click the green run icon again.
-
-To run the tests, open `RoutePlannerTests.java` and click the run icon next to its `main` method (no arguments needed).
 
 ### Expected output for `data/sample_deliveries.csv`
 
@@ -84,15 +74,6 @@ Summary: 5 deliveries planned in 3 trip(s), 0 skipped.
 
 `plan.csv` is created only when `--output` is used, and a relative name is saved in the **working directory** (the folder you ran the command from; the project folder in IntelliJ). The program prints `Plan exported to: ...` when it succeeds. You can also give a full path, for example `--output C:\Users\me\Desktop\plan.csv`.
 
-### Troubleshooting
-
-| Problem | Cause and fix |
-|---|---|
-| `illegal character: '\ufeff'` when compiling | A file was saved as "UTF-8 with BOM" (some Windows editors do this). In IntelliJ: right-click the file tab -> *Remove BOM*. Set *Settings -> Editor -> File Encodings -> Create UTF-8 files* to *with NO BOM*. |
-| `cannot find symbol` when compiling the tests | The program was not compiled first. Run step 1 again. |
-| `Could not find or load main class` | Wrong class name or wrong folder. Use `hanwassalk.Main` / `hanwassalk.RoutePlannerTests` and run from the project folder. |
-| `file not found: data/...` | The working directory is wrong. It must be the folder that contains `data` and `src`. |
-| `javac` is not recognized | Only a JRE is installed, or the JDK is not on the PATH. Install a JDK (for example Temurin 17). |
 
 ## Project structure
 
