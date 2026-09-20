@@ -23,21 +23,26 @@ More examples:
 ```bash
 java -cp out hanwassalk.Main data/edge_cases.csv                        # bad rows, ties, exact-capacity cases
 ```
-![img.png](img.png)
+<img width="1060" height="653" alt="Screenshot 2026-09-20 125916" src="https://github.com/user-attachments/assets/fc3e0746-be97-41f0-a9d1-88490669d636" />
+
 
 ```bash
 java -cp out hanwassalk.Main data/empty.csv                             # no deliveries
 ```
-![img_1.png](img_1.png)
+<img width="952" height="87" alt="Screenshot 2026-09-20 130050" src="https://github.com/user-attachments/assets/cd10e066-cd40-4990-a163-527a0b83cd96" />
+
 ```bash
 java -cp out hanwassalk.Main data/sample_deliveries.csv --capacity 8    # change the vehicle capacity (kg)
 ```
-![img_2.png](img_2.png)
+<img width="1155" height="377" alt="Screenshot 2026-09-20 132757" src="https://github.com/user-attachments/assets/3d3ad938-a1de-4446-ab42-dfac150ca739" />
+
 ```bash
 java -cp out hanwassalk.Main data/sample_deliveries.csv --output plan.csv   # extension: export the plan
 ```
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+<img width="1298" height="403" alt="Screenshot 2026-09-20 132859" src="https://github.com/user-attachments/assets/42dcc1d9-05f6-4b5d-9387-3b7dd3971d31" />
+
+<img width="722" height="220" alt="Screenshot 2026-09-20 132924" src="https://github.com/user-attachments/assets/d900b5d9-e9fb-4de1-8926-2a18498ef818" />
+
 
 Run the tests (the program must be compiled first, see step 1):
 
@@ -45,7 +50,7 @@ Run the tests (the program must be compiled first, see step 1):
 javac -d out -cp out src/test/java/hanwassalk/RoutePlannerTests.java
 java -cp out hanwassalk.RoutePlannerTests
 ```
-![img_5.png](img_5.png)
+<img width="1001" height="310" alt="Screenshot 2026-09-20 133000" src="https://github.com/user-attachments/assets/dd598937-dc15-47b5-b277-39e073d0a788" />
 
 
 
