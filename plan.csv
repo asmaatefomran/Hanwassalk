@@ -1,0 +1,6 @@
+trip,area,delivery_id,priority,weight_kg,trip_load_kg
+1,Maadi,2,1,2,5.5
+1,Maadi,5,2,3.5,5.5
+2,Zamalek,4,1,7,7
+3,Nasr City,1,2,4.5,5.7
+3,Nasr City,3,3,1.2,5.7
